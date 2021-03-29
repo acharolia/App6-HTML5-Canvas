@@ -71,7 +71,7 @@ var a_canvas = document.getElementById("myCanvas"); // shows variable myCanvas o
 function draw_b() {
 	 var a_canvas = document.getElementById("myCanvas");
 	 var a_context = a_canvas.getContext("2d");
-	 b_context.fillRect(50, 25, 150, 100);
+	 a_context.fillRect(50, 25, 150, 100);
 }
 	</script> 
 	
@@ -94,7 +94,7 @@ function draw_b() {
          
 	<canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;"> </canvas>
 	</div>
-	<div>
+	
 	<a onclick="draw_b();" class="w3-btn w3-black">Draw Rectangle </a>
 						     </div>					     
 <footer class="w3-bottom w3-container w3-flat-carrot">
