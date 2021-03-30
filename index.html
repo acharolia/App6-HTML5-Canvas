@@ -86,19 +86,19 @@ function draw_text(){//function that creates my name
 	</script>
 	
 <script>
-function insert_image(){
-	var a_canvas = document.getElementById("myCanvas");
-	var a_context = a_canvas.getContext("2d");
-	var img = new Image();
-	img.src = "venus.jpg";
-	img.onload = function() {
-		a_context.drawImage(img, 200,5,60,60);
+function insert_image(){//function that inserts image
+	var a_canvas = document.getElementById("myCanvas");//variable that brings the canvas
+	var a_context = a_canvas.getContext("2d");//makes image 2d
+	var img = new Image();//makes a variable of the image which is equal to the new image
+	img.src = "venus.jpg";//brings the image in and stores it under src
+	img.onload = function() {//function that adds image
+		a_context.drawImage(img, 200,5,60,60);//cordinates for where the image will be placed
 		};
 	}
 </script>
 
 <script>
-function clear_canvas(){
+function clear_canvas(){//function that clears the canvas
 	var a_canvas = document.getElementById("myCanvas");
 	a_canvas.width = a_canvas.width;
 }
