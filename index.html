@@ -84,6 +84,19 @@ function draw_text(){
 	}
 	</script>
 	
+<script>
+function insert_image(){
+	var a_canvas = document.getElementById("myCanvas");
+	var a_context = a_canvas.getContext("2d");
+	var img = new Image();
+	img.src = "venus.jpg";
+	img.onload = function() {
+		a_context.drawImage(img, 200,5,70,70);
+		};
+	}
+</script>
+		
+	
 	
 	
 <body>
